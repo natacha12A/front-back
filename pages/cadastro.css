@@ -1,0 +1,104 @@
+/* ====== ESTILOS GERAIS ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #f8e6ec; /* vinho claro */
+    color: #3b0a0a; /* vinho escuro */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ====== CABEÇALHO ====== */
+header {
+    background-color: #7a1f3d; /* vinho médio-escuro */
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+/* ====== FORMULÁRIO ====== */
+form {
+    background-color: #ffffffcc; /* branco com leve transparência */
+    width: 90%;
+    max-width: 500px;
+    margin-top: 3rem;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* ====== CAMPOS ====== */
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    color: #7a1f3d;
+    margin-bottom: 0.4rem;
+}
+
+input {
+    padding: 0.7rem;
+    border: 2px solid #b03a5b;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #7a1f3d;
+    box-shadow: 0 0 5px rgba(122, 31, 61, 0.4);
+}
+
+/* ====== BOTÃO ====== */
+button {
+    background-color: #b03a5b;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #8f2749;
+    transform: scale(1.05);
+}
+
+/* ====== ANIMAÇÃO ====== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
